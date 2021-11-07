@@ -1,7 +1,5 @@
 from __future__ import division, print_function
 # coding=utf-8
-import sys
-import os
 import glob
 import re
 import numpy as np
