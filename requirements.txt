@@ -131,7 +131,6 @@ imageio==2.4.1
 imagesize==1.2.0
 imbalanced-learn==0.4.3
 imblearn==0.0
-imgaug==0.2.9
 importlib-metadata==4.8.1
 importlib-resources==5.2.2
 imutils==0.5.4
