@@ -68,7 +68,6 @@ earthengine-api==0.1.284
 easydict==1.9
 ecos==2.0.7.post1
 editdistance==0.5.3
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.5/en_core_web_sm-2.2.5.tar.gz
 entrypoints==0.3
 ephem==4.1
 et-xmlfile==1.1.0
@@ -151,7 +150,6 @@ ipython-sql==0.3.9
 ipywidgets==7.6.5
 itsdangerous==1.1.0
 jax==0.2.21
-jaxlib @ https://storage.googleapis.com/jax-releases/cuda111/jaxlib-0.1.71+cuda111-cp37-none-manylinux2010_x86_64.whl
 jdcal==1.4.1
 jedi==0.18.0
 jieba==0.42.1
@@ -334,7 +332,7 @@ tblib==1.7.0
 tensorboard==2.6.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.0
-tensorflow @ file:///tensorflow-2.6.0-cp37-cp37m-linux_x86_64.whl
+tensorflow==2.6.0
 tensorflow-datasets==4.0.1
 tensorflow-estimator==2.6.0
 tensorflow-gcs-config==2.6.0
@@ -352,10 +350,8 @@ tifffile==2021.10.12
 toml==0.10.2
 tomli==1.2.1
 toolz==0.11.1
-torch @ https://download.pytorch.org/whl/cu111/torch-1.9.0%2Bcu111-cp37-cp37m-linux_x86_64.whl
 torchsummary==1.5.1
 torchtext==0.10.0
-torchvision @ https://download.pytorch.org/whl/cu111/torchvision-0.10.0%2Bcu111-cp37-cp37m-linux_x86_64.whl
 tornado==5.1.1
 tqdm==4.62.3
 traitlets==5.1.0
