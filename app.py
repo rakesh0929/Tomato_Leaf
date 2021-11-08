@@ -16,7 +16,7 @@ config.gpu_options.per_process_gpu_memory_fraction = 0.2
 config.gpu_options.allow_growth = True
 session = InteractiveSession(config=config)
 # Keras
-from tensorflow.keras.applications.resnet50 import preprocess_input
+from tensorflow.keras.applications.inception_v3 import preprocess_input
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 
@@ -56,33 +56,25 @@ def model_predict(img_path, model):
     preds = model.predict(x)
     preds=np.argmax(preds, axis=1)
     if preds==0:
-        preds="The Disease is Pepper__bell___Bacterial_spot"
+        preds="Tomato___Bacterial_spot"
     elif preds==1:
-        preds="The Disease is Pepper__bell___healthy"
+        preds="Tomato___Early_blight"
     elif preds==2:
-        preds="The Disease is Potato___Early_blight"
+        preds="Tomato___healthy"
     elif preds==3:
-        preds="Te Disease is Potato___healthy"
+        preds="Tomato___Late_blight"
     elif preds==4:
-        preds="The Disease is Potato___Late_blight"
+        preds="Tomato___Leaf_Mold"
     elif preds==5:
-        preds="The Disease is Tomato__Tomato_mosaic_virus"
+        preds="Tomato___Septoria_leaf_spot"
     elif preds==6:
-        preds="The Disease is Tomato__Tomato_YellowLeaf__Curl_Virus"
+        preds="Tomato___Spider_mites Two-spotted_spider_mite"
     elif preds==7:
-        preds="The Disease is Tomato_Bacterial_spot"
+        preds="Tomato___Target_Spot"
     elif preds==8:
-        preds="The Disease is Tomato_Early_blight"
+        preds="Tomato___Tomato_mosaic_virus"
     elif preds==9:
-        preds="The Disease is Pepper__bell___Bacterial_spot"
-    elif preds==10:
-        preds="The Disease is Pepper__bell___Bacterial_spot"
-    elif preds==11:
-        preds="The Disease is Pepper__bell___Bacterial_spot"
-    elif preds==12:
-        preds="The Disease is Pepper__bell___Bacterial_spot"
-    elif preds==13:
-        preds="The Disease is Pepper__bell___Bacterial_spot"
+        preds="Tomato___Tomato_Yellow_Leaf_Curl_Virus"
     
     
     return preds
